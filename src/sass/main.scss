@@ -1,0 +1,21 @@
+@import './components/googleBtn.scss';
+@import './components/navbar.scss';
+
+html {
+    height: 100vh;
+}
+
+@font-face {
+    font-family: graff1;
+    src: url(../../public/fonts/Mostwasted.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: graff2;
+    src: url(../../public/fonts/FatWandals.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: graff3;
+    src: url(../../public/fonts/FatWandalsElement.ttf) format('truetype');
+}

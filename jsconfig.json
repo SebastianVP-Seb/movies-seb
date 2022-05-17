@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@pages/*": ["./src/pages/*"],
+            "@components/*": ["./src/components/*"],
+            "@images/*": ["./src/images/*"],
+            "@services/*": ["./src/services/*"],
+            "@reducers/*": ["./src/reducers/*"],
+            "@types/*": ["./src/types/*"],
+            "@actions/*": ["./src/actions/*"],
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "movies-seb",
+  "version": "1.0.0",
+  "description": "movies app",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack/config.prod.js",
+    "start": "webpack serve --config webpack/config.dev.js"
+  },
+  "keywords": [
+    "react",
+    "react-router-dom",
+    "material-ui",
+    "firebase",
+    "oauth"
+  ],
+  "author": "Ing Sebastian",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass-loader": "^12.6.0",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/lab": "^5.0.0-alpha.81",
+    "@mui/material": "^5.6.4",
+    "@reduxjs/toolkit": "^1.8.1",
+    "axios": "^0.27.2",
+    "firebase": "^9.8.0",
+    "notistack": "^2.0.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.51.0",
+    "validator": "^13.7.0"
+  }
+}

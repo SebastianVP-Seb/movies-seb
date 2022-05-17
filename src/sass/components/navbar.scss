@@ -1,0 +1,21 @@
+a.navLink_btn {
+    transition: all .5s;
+    
+    &:hover {
+        background-color: aqua;
+    }
+    
+    &.active {
+        border-bottom: 2px solid;
+    }
+}
+
+.title_navbar {
+    font-family: graff1;
+    letter-spacing: .5rem;
+    // font-size: 1.4rem;
+}
+
+.flecha_a {
+    font-family: graff3;
+}
