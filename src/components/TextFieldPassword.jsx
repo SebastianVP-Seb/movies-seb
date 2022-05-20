@@ -20,7 +20,7 @@ const TextFieldPassword = ({label, name, error, helperText}) => {
                 type={showPassword ? 'text' : 'password'}
                 label={label}
                 name={name}
-                color='secondary'
+                // color='secondary'
                 endAdornment={
                     <InputAdornment position="end">
                         <IconButton

@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 
 const GoogleBtn = (props) => {
@@ -6,9 +7,13 @@ const GoogleBtn = (props) => {
     const {children}=props;
 
   return (
-    <button className='google_btn' type='button' {...props} >
+    <Button
+      // color='customColor'
+      className='google_btn'
+      {...props}
+    >
         {children || 'Inicia sesión con Google'}
-    </button>
+    </Button>
   );
 };
 

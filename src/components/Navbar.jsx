@@ -5,9 +5,11 @@ import AppLogo from '../images/icons8-corona.png';
 
 const Navbar = ({itemRenderComponents}) => {
   /*NavLink, comportamiento similar a Link, éste recibe la var isActive en sus propiedades children, 
+
+  
   className y style */
   return (
-    <AppBar color='secondary' position='static' elevation={2} c >
+    <AppBar position='static' elevation={2} >
       <Toolbar sx={{
         display: 'flex',
         justifyContent: 'space-around',
@@ -15,6 +17,9 @@ const Navbar = ({itemRenderComponents}) => {
       }}>
         <Box component='img' src={AppLogo} sx={{width: '3rem'}} />
         <h4 className='title_navbar'>i Am Sebastian</h4>
+        <Button sx={{color: 'white', backgroundColor: 'black'}} onCl >
+          Change Theme
+        </Button>
         {/* Permitirá renderizar varios componentes  */}
         {itemRenderComponents}
       </Toolbar>

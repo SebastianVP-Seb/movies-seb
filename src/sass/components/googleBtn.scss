@@ -4,8 +4,8 @@
     border: none;
     border-radius: 5px;
     width: 100%;
-    color: rgb(0, 0, 0);
-    background-color: rgb(211, 211, 211);
+    // color: rgb(0, 0, 0);
+    // background-color: rgb(211, 211, 211);
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -13,14 +13,14 @@
     margin-top: .3rem;
     
     &:hover {
-        background-color: rgb(143, 143, 143);
+        // background-color: rgb(143, 143, 143);
         cursor: pointer;
         box-shadow: .5rem .5rem 1rem rgba( #000000, .4);
-        color: whitesmoke;
+        // color: whitesmoke;
     }
 
     &:active {
-        background-color: whitesmoke;
+        // background-color: whitesmoke;
     }
 
     &:focus {

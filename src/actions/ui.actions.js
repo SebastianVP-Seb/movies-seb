@@ -1,5 +1,6 @@
 import { TYPES } from "../types/reduxTypes";
 import { UI } from "../types/uiTypes";
+import {openSnackAction, closeSnackAction, loadingOn, loadingOff} from '@reducers/ui.reducer';
 
 export const startOpenSnack=(params)=>dispatch=>{
     const {anchorOrigin= UI.SNACK.POSITION.TOP_RIGHT, message, type= 'info', duration= 3000} = params;
@@ -22,20 +23,21 @@ export const endLoading=()=>(dispatch, getState)=>{
     loading && dispatch(loadingOff());
 };
 
-const openSnackAction=payload=>({
-    type: TYPES.UI.SNACK.OPEN,
-    payload
-});
+//PARA EL REDUX ANTERIOR
+// const openSnackAction=payload=>({
+//     type: TYPES.UI.SNACK.OPEN,
+//     payload
+// });
 
-const closeSnackAction=payload=>({
-    type: TYPES.UI.SNACK.CLOSE,
-    payload
-});
+// const closeSnackAction=payload=>({
+//     type: TYPES.UI.SNACK.CLOSE,
+//     payload
+// });
 
-const loadingOn=()=>({
-    type: TYPES.UI.LOADING.ON
-});
+// const loadingOn=()=>({
+//     type: TYPES.UI.LOADING.ON
+// });
 
-const loadingOff=()=>({
-    type: TYPES.UI.LOADING.OFF
-});
+// const loadingOff=()=>({
+//     type: TYPES.UI.LOADING.OFF
+// });

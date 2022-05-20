@@ -1,3 +1,4 @@
+import { createAction } from "@reduxjs/toolkit";
 import {
     createUser,
     loginUser,
@@ -10,8 +11,14 @@ import { TYPES } from "../types/reduxTypes";
 import { UI } from "../types/uiTypes";
 import { endLoading, startLoading, startOpenSnack } from "./ui.actions";
 
+//Tarea de Thunk.
+//Al regresarle una f luego de formLogin, recibe dos argumentos: dispatch y state
 export const startLoginUser=formLogin=>dispatch=>{
     dispatch(startLoading());
+    // dispatch(authLoginAction({
+    //     id: 'seb',
+    //     name: 'Jade'
+    // }));
     loginUser(formLogin)
         .then(response=>{
             if(response.error) {
@@ -122,12 +129,16 @@ export const startLogOut=()=>dispatch=>{
     });
 };
 
-//FIRMAS
-const loginAction=(payload)=>({
-    type: TYPES.AUTH.LOGIN,
-    payload
-});
+//DEFINICIÓN DE ACCIONES PARA createReducer
+export const loginAction=createAction(TYPES.AUTH.LOGIN+'Nuevo');
+export const logOutAction=createAction(TYPES.AUTH.LOGOUT);
 
-const logOutAction=()=>({
-    type: TYPES.AUTH.LOGOUT
-});
+//FIRMAS, para redux antigüo
+// const loginAction=(payload)=>({
+//     type: TYPES.AUTH.LOGIN,
+//     payload
+// });
+
+// const logOutAction=()=>({
+//     type: TYPES.AUTH.LOGOUT
+// });

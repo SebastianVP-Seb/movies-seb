@@ -12,11 +12,7 @@ const MenuRouter = () => {
 
     // <PrivateRoutes>
     <>
-      <Navbar itemRenderComponents={
-        <>
-          {/* <NavbarDashboard /> */}
-          <AvatarCustom />
-        </>} />
+      <Navbar  />
       <Routes>
         <Route path='profile' element={<ProfileUser />} />
         <Route path='settings' element={<SettingsUser />} />

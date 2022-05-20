@@ -54,7 +54,7 @@ export const Login = () => {
           label='Email'
           name='email'
           type='email'
-          color='secondary'
+          // color='secondary'
           autoComplete='off'
           required
           autoFocus
@@ -70,7 +70,7 @@ export const Login = () => {
         <LoadingButton 
           loading={loading}
           variant="outlined" 
-          color='secondary' 
+          // color='secondary' 
           type='submit' 
           // boxShadow
           sx={{marginY: 2, boxShadow: '2rem 2 2 rgba(#0000, .4)' }} 

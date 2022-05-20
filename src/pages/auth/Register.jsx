@@ -37,7 +37,7 @@ export const Register = () => {
       // enqueueSnackbar(`Hola ${form.name}!`, {variant: 'success', preventDuplicate: true});
     } else {
       enqueueSnackbar(`No se puede registrar`, {variant: 'error', preventDuplicate: true});
-    }
+    };
   };
 
   const handleRegisterWithGoogle=()=>{
@@ -50,11 +50,11 @@ export const Register = () => {
       <span className='flecha_a'>B</span> Regístrate <span className='flecha_a'>J</span></Typography>
         <Box component='form'  onSubmit={handleSubmit} sx={{marginTop: 2}} noValidate >
           <TextField
-            sx={{color: 'blueviolet'}}
+            // sx={{color: 'blueviolet'}}
             label='Nombre'
             name='name'
             type='text'
-            color='secondary'
+            // color='secondary'
             autoComplete='off'
             required
             autoFocus
@@ -67,7 +67,7 @@ export const Register = () => {
             label='Email'
             name='email'
             type='email'
-            color='secondary'
+            // color='secondary'
             autoComplete='off'
             required
             fullWidth
@@ -87,7 +87,7 @@ export const Register = () => {
           <LoadingButton
             loading={loading}
             variant="outlined" 
-            color='secondary' 
+            // color='secondary' 
             type='submit' 
             // boxShadow
             sx={{marginY: 1, boxShadow: '2rem 2 2 rgba(#0000, .4)' }} 

@@ -1,3 +1,5 @@
+import { selectedMovieThunk } from "@actions/movie.actions";
+import { createSlice } from "@reduxjs/toolkit";
 import { TYPES } from "@types/reduxTypes";
 
 const initialState={
@@ -50,3 +52,33 @@ export const movieReducer=(state=initialState, action)=>{
             return state;
     };
 };
+
+//Reducer utilizando createSlice de reduxToolkit
+export const moviesSlice=createSlice({
+    name: 'movies',
+    initialState,
+    reducers: {
+        selectedMovieAction(state, {payload}) {
+            state.selected=payload
+        }
+    },
+    extraReducers: (builder) => {
+        builder.
+            addCase(
+                selectedMovieThunk.fulfilled,
+                    (state, action) => {
+                        console.log({state, action});
+                        state.selected=action.payload;
+                    }
+            )
+            // .addCase(
+            //     selectedMovieThunk.pending, 
+            //     (state, action)=>{
+            //         console.log({state, action})
+            //     }
+            // )
+    }
+});
+
+//exportando las acciones de reducers, importar en el archivo de acciones
+export const {selectedMovieAction}=moviesSlice.actions;
