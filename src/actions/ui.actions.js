@@ -1,4 +1,4 @@
-import { TYPES } from "../types/reduxTypes";
+// import { TYPES } from "../types/reduxTypes";
 import { UI } from "../types/uiTypes";
 import {openSnackAction, closeSnackAction, loadingOn, loadingOff} from '@reducers/ui.reducer';
 

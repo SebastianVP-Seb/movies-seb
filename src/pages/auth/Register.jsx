@@ -94,7 +94,7 @@ export const Register = () => {
             fullWidth
           >Regístrate</LoadingButton>
 
-          <Grid container justifyContent='center'>
+          {/* <Grid container justifyContent='center'>
             <Grid item>
               <LinkMaterial component={LinkReact} to='/auth/login' variant='h6'
               sx={{fontSize: '1rem', textDecoration: 'none', textAlign: 'left', color: '#000',
@@ -103,7 +103,7 @@ export const Register = () => {
                 Inicia sesión
               </LinkMaterial>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           <GoogleBtn onClick={handleRegisterWithGoogle} >
             <img src={GoogleLogo} className='google_logo' />

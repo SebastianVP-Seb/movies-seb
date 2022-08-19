@@ -3,6 +3,8 @@ import AvatarCustom from '@components/AvatarCustom';
 import { Menu, MenuItem } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { startLogOut } from '@actions/auth.actions';
+import {Link as LinkMaterial } from '@mui/material';
+import { Link as LinkReact} from 'react-router-dom';
 
 const NavbarDashboard = () => {
 
@@ -23,8 +25,18 @@ const NavbarDashboard = () => {
         onClose={handleCloseMenu}
         sx={{marginTop: '1rem'}}
       >
-        <MenuItem >Perfil</MenuItem>
-        <MenuItem>Configuración</MenuItem>
+        <MenuItem >
+          <LinkMaterial component={LinkReact} to='/menuUser/profile' 
+            sx={{textDecoration: 'none', textAlign: 'left'}}
+            >Perfil
+          </LinkMaterial>
+        </MenuItem>
+        <MenuItem>
+        <LinkMaterial component={LinkReact} to='/menuUser/profile' 
+            sx={{textDecoration: 'none', textAlign: 'left'}}
+            >Configuración
+          </LinkMaterial>
+        </MenuItem>
         <MenuItem onClick={handleCloseSesion} >Cerrar sesión</MenuItem>
       </Menu>
     </>

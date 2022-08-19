@@ -19,4 +19,9 @@ export const TYPES={
         POPULAR: '[MOVIE] POPULAR',
         TRENDING: '[MOVIE] TRENDING'
     },
+    THEME: {
+        PURPLE: '[THEME] PURPLE',
+        BLUE: '[THEME] BLUE',
+        PINK: '[THEME] PINK'
+    }
 };

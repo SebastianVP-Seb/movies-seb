@@ -76,7 +76,7 @@ export const Login = () => {
           sx={{marginY: 2, boxShadow: '2rem 2 2 rgba(#0000, .4)' }} 
           fullWidth
         >Inicia sesión</LoadingButton>
-        <Grid container justifyContent='center'>
+        {/* <Grid container justifyContent='center'>
           <Grid item>
             <LinkMaterial component={LinkReact} to='/auth/register' variant='h6' 
               sx={{fontSize: '1rem', textDecoration: 'none', textAlign: 'left', color: '#000',
@@ -86,7 +86,7 @@ export const Login = () => {
               Regístrate
             </LinkMaterial>
           </Grid>
-        </Grid>
+        </Grid> */}
         <GoogleBtn onClick={handleLoginWithGoogle} >
           <img src={GoogleLogo} className='google_logo' />
           Inicia sesión con Google

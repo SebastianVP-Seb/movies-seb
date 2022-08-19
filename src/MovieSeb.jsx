@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from '@mui/material';
 import {theme1} from './theme';
 import { SnackbarProvider } from 'notistack';
@@ -8,8 +8,6 @@ import './sass/main.scss';
 import store from './store';
 
 const MovieSeb = () => {
-
-  const [themeSelected, setThemeSelected]=useState(theme1);
 
   return (
     <Provider store={store}>

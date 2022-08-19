@@ -1,31 +1,35 @@
-export const palette = {
-    // mode: 'dark',
-    //Morado
-    primary: {
-        // main: '#651fff',
-        // dark: '#311b92',
-        // light: '#7c4dff',
+import React from 'react'
+import { useSelector } from "react-redux"
 
-        // main: '#00e5ff',
-        // dark: '#00b8d4',
-        // light: '#84ffff',
-        // contrastText: '#fff',
+const Hola=()=>{
+    const {main, dark, light}=useSelector(state=>state.theme);
+    console.log(main, dark, light)
+    // Hola();  
 
-        main: '#f50057',
-        dark: '#880e4f',
-        light: '#ef5350'
-    },
-    // secondary: {
+    return (
+        <></>
+    )
 
-        //Aqua
-    //     main: '#00e5ff',
-    //     dark: '#00b8d4',
-    //     light: '#84ffff',
-    //     contrastText: '#fff'
-    // },
-    // customColor: {
-    //     main: '#f50057',
-    //     dark: '#880e4f',
-    //     light: '#ef5350'
-    // },
-}
+};
+
+
+    export const palette = {
+    //     // mode: 'dark',
+    //     //Morado
+    //     primary: {
+            main: '#651fff',
+            dark: '#311b92',
+            light: '#7c4dff',
+    
+            // main: '#00e5ff',
+            // dark: '#00b8d4',
+            // light: '#84ffff',
+            // contrastText: '#fff',
+            
+            // main,
+            // dark,
+            // light
+        }
+    // }
+
+
